@@ -11,4 +11,5 @@
 
 body > div {
   min-height: max-content;
+  min-width: 100%;
 }

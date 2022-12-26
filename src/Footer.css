@@ -1,4 +1,5 @@
 .footerContainer {
     vertical-align: middle;
     color: black;
+    min-width: 100%;
 }
