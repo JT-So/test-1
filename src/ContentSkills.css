@@ -1,0 +1,102 @@
+.skillsContainer {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: rgb(31, 4, 4);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.skillsTitle {
+    justify-self: center;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.skillsMenu {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.skillsMenuItem {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    align-self: flex-end;
+    transition: font-size .50s;
+}
+
+.skillsMenuItem:hover{
+    text-decoration: underline;
+    font-size: 1.5rem;
+    transition: font-size .50s;
+}
+
+.skillsMenuItem-active{
+    text-decoration: underline;
+    font-size: 1.5rem;
+    transition: font-size .50s;
+}
+
+
+.skillSection {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    grid-area: 2/2;
+    overflow: hidden;
+    border-top: double;
+    border-top-width: 10px;
+    border-top-color: rgb(71, 16, 16);
+}
+
+.hardSkillsContainer, .softSkillsContainer, .languageSkillsContainer {
+    position: absolute;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: rgb(51, 19, 19);
+    min-height: 40vh;
+    top: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px -5px black;
+}
+
+.hardSkillsList, .softSkillsList, .languageSkillsList {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 1rem;
+    align-items: center;
+    justify-items: start;
+}
+
+.hardSkillsItem, .softSkillsItem, .languageSkillsItem {
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    background-color: rgb(31, 4, 4);
+    width: 100%;
+    box-shadow: 0px 10px 10px -5px black;
+    color: rgb(221, 218, 218);
+    font-size: .75rem;
+}
+
+.hardSkillsItem > img, .softSkillsItem > img, .languageSkillsItem > img {
+    height: 1rem;
+    background-color: none;
+    margin-right: .5rem;
+}
+
+.hardSkillsContainer-active, .softSkillsContainer-active, .languageSkillsContainer-active {
+    left: 0;
+    opacity: 1;
+    transition: ease-out .50s;
+}
+
+.hardSkillsContainer-out, .softSkillsContainer-out, .languageSkillsContainer-out {
+    opacity: 0;
+    left: 100%;
+    transition: ease-in .50s;
+}

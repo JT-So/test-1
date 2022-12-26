@@ -1,0 +1,59 @@
+.contentContainer {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "aboutMe profilePicture";
+    background-color: rgb(51, 19, 19);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.profilePictureContainer {
+    grid-area: profilePicture;
+    padding-top: 50px;
+    justify-self: center;
+    padding-bottom: 50px;
+}
+
+.profilePicture {
+    min-height: 100px;
+    min-width: 100px;
+    height: 350px;
+    width: 250px;
+    box-shadow: 1px 5px 5px 5px black;
+    border-width: 20px;
+    border-style: solid;
+    border-color: rgb(51, 19, 19);
+}
+
+.profilePicture > img {
+    height: 100%;
+    width: 100%;
+}
+
+.aboutMeContainer {
+    grid-area: aboutMe;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 20%;
+    border-right-style: solid;
+    border-right-width: 10px;
+    border-right-color: rgb(78, 44, 44);
+}
+
+.aboutMeTitle {
+    font-size: 2rem;
+}
+
+.aboutMeParagraph {
+    margin-top: 2rem;
+}
+
+.aboutMeParagraph > p {
+    color: rgb(221, 218, 218);
+}
